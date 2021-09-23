@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { validEmail } from "./Regex";
 
 const Reset = () => {
+  const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(false);
+  const validate = () => {
+    if (!validEmail.test(email)) {
+      setEmailErr(true);
+    }
+  };
   return (
     <div className="container">
       <div className="row">
@@ -14,13 +22,7 @@ const Reset = () => {
                 <h2 className="text-center">Forgot Password?</h2>
                 <p>You can reset your password here.</p>
                 <div className="panel-body">
-                  <form
-                    id="register-form"
-                    role="form"
-                    autocomplete="off"
-                    className="form"
-                    method="post"
-                  >
+                  <form>
                     <div className="form-group">
                       <div className="input-group">
                         <span className="input-group-addon">
@@ -32,6 +34,8 @@ const Reset = () => {
                           placeholder="email address"
                           className="form-control"
                           type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -41,17 +45,19 @@ const Reset = () => {
                         className="btn btn-lg btn-warning btn-block"
                         value="Reset Password"
                         type="submit"
+                        onClick={validate}
                       />
                     </div>
 
-                    <input
+                    {/* <input
                       type="hidden"
                       className="hide"
                       name="token"
                       id="token"
                       value=""
-                    />
+                    /> */}
                   </form>
+                  {emailErr && <p>Your email is invalid</p>}
                 </div>
               </div>
             </div>
