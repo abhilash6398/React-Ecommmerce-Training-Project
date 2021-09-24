@@ -1,75 +1,35 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import "./nav.css";
+import React from 'react';
+import { Navbar, Container } from 'react-bootstrap';
+import './Navbar.css';
 
-const Navbar = () => {
+function navbar() {
+
   return (
-    <div id="wrapper">
-      {/* <!--Header Section Start Here */}
-      <nav class="navbar navbar-default navbar-fixed-top nav-down">
-        <div class="container">
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar"
-              aria-expanded="false"
-              aria-controls="navbar"
-            >
-              {" "}
-              <span class="sr-only">Techugo navigation</span>
-              <span class="icon-bar"></span> <span class="icon-bar"></span>{" "}
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              Techugo logo
-            </a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="#">HOME</a>
-              </li>
-              <li>
-                <a href="#">ABOUT US</a>
-              </li>
-              <li>
-                <a href="#">LATEST PRODUCTS</a>
-              </li>
-              <li>
-                <a href="#">CONTACT US</a>
-              </li>
-              <li>
-                <a href="#">SHOP</a>
-              </li>
-            </ul>
-          </div>
 
-          <div class="headerrtsnav">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="#">
-                  <span class="stores"></span>Stores
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="account"></span>Account
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="cart"></span>Cart<i class="notif_num">10</i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="overlaybg"></div>
-      </nav>
+    <div className="Nav__head">
+      <div className="Nav__logo">
+        {/* <img className="nav__logo" src="" alt="GeekHub Logo" /> */}
+      </div>
+      <div className="Nav__links">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Products</li>
+          <li>Contact</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div className="Nav__icons">
+        <ul>
+          <li><img alt="Account" src="https://img.icons8.com/material-sharp/24/000000/guest-male.png"/></li>
+          <li><img alt="Wishlist" src="https://img.icons8.com/ios-glyphs/24/000000/like--v1.png"/></li>
+          <li><img alt="Cart" src="https://img.icons8.com/material-rounded/24/000000/shopping-cart.png"/></li>
+          <li><img alt="Search" src="https://img.icons8.com/ios-filled/24/000000/search--v1.png"/></li>
+        </ul>
+      </div>
+
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default navbar

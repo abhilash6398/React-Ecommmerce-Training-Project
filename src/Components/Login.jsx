@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   return (
-    <div className="centered">
+    <div className="centered" style={{marginTop:"20px"}}>
       <div className="text-center mb-7">
         <h2 className="text-warning">Login to your account</h2>
       </div>

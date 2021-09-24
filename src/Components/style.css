@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 176px;
+  padding: 16px;
 }
 
 .container {
@@ -30,3 +30,4 @@ form {
   width: 120px;
   padding: 6px 18px;
 }
+

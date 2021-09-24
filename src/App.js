@@ -3,13 +3,13 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import Navbar from "./shared/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./shared/Footer";
 import Reset from "./Components/Reset";
 
 function App() {
   return (
+    
     <Router>
-      <Navbar />
+      <Navbar />  
       <Switch>
         {/* <Route path="/" exact component={Home} />
           <Route path="/about-us" component={AboutUs} />

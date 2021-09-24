@@ -41,7 +41,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="centered">
+    <div className="centered" style={{marginTop:"60px"}}>
       <div className="text-center mb-7">
         <h2 className="text-warning">Hello</h2>
         <h1 className="text-dark">SignUp</h1>
