@@ -10,9 +10,9 @@ const Reset = () => {
     }
   };
   return (
-    <div className="container">
+    <div className="container" style={{textAlign:"center"}}>
       <div className="row">
-        <div className="col-md-4 col-md-offset-4">
+        <div className="col-md-12 col-md-offset-12">
           <div className="panel panel-default">
             <div className="panel-body">
               <div className="text-center">
@@ -21,6 +21,7 @@ const Reset = () => {
                 </h3>
                 <h2 className="text-center">Forgot Password?</h2>
                 <p>You can reset your password here.</p>
+                <br/>
                 <div className="panel-body">
                   <form>
                     <div className="form-group">
@@ -31,7 +32,7 @@ const Reset = () => {
                         <input
                           id="email"
                           name="email"
-                          placeholder="email address"
+                          placeholder="Enter your Email Address"
                           className="form-control"
                           type="email"
                           value={email}
