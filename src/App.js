@@ -1,7 +1,7 @@
 import "./App.css";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
-import Navbar from "./shared/Navbar";
+import Nav from "./shared/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Reset from "./Components/Reset";
 
@@ -9,7 +9,7 @@ function App() {
   return (
     
     <Router>
-      <Navbar />  
+      <Nav />  
       <Switch>
         {/* <Route path="/" exact component={Home} />
           <Route path="/about-us" component={AboutUs} />
