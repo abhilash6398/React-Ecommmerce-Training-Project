@@ -14,6 +14,8 @@ function Signup() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [shopName, setShopName] = useState("");
+  const [shopURL, setShopURL] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const [emailErr, setEmailErr] = useState(false);
   const [pwdError, setPwdError] = useState(false);
@@ -42,7 +44,7 @@ function Signup() {
 
   return (
     <div className="centered">
-      <div className="pgaddressrow" style={{ marginTop: "200px" }}>
+      <div className="pgaddressrow" style={{ marginTop: "300px" }}>
         <h1 className="heading">Login / Register</h1>
         <h4 className="smheading">
           <a href="/login">Home</a> / Login / <a href="/Signup ">Register</a>
@@ -80,6 +82,28 @@ function Signup() {
             />
           </div>
           <div className="form-group col-md-6">
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              className="form-control"
+              id="inputname"
+              placeholder="Enter Last Name"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+          </div>
+          <div className="form-group col-md-6">
+            <label for="inputname">Shop Name</label>
+            <input
+              type="url"
+              className="form-control"
+              id="inputshopURL"
+              placeholder="Enter Shop URL"
+              value={shopURL}
+              onChange={(e) => setShopURL(e.target.value)}
+            />
+          </div>
+          <div className="form-group col-md-6">
             <label for="inputEmail4">Email Address</label>
             <input
               type="email"
@@ -104,7 +128,7 @@ function Signup() {
         </div>
         <div className="form-group">
           <label for="inputAddress">Shop Name</label>
-          <input
+          <textarea
             type="text"
             className="form-control"
             id="inputAddress"
