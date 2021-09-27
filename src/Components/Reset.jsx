@@ -10,7 +10,7 @@ const Reset = () => {
     }
   };
   return (
-    <div className="container" style={{textAlign:"center"}}>
+    <div className="container" style={{ textAlign: "center" }}>
       <div className="row">
         <div className="col-md-12 col-md-offset-12">
           <div className="panel panel-default">
@@ -21,7 +21,7 @@ const Reset = () => {
                 </h3>
                 <h2 className="text-center">Forgot Password?</h2>
                 <p>You can reset your password here.</p>
-                <br/>
+                <br />
                 <div className="panel-body">
                   <form>
                     <div className="form-group">

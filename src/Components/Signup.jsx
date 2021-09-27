@@ -41,7 +41,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="centered" style={{marginTop:"60px"}}>
+    <div className="centered" style={{ marginTop: "60px" }}>
       <div className="text-center mb-7">
         <h2 className="text-warning">Hello</h2>
         <h1 className="text-dark">SignUp</h1>
@@ -58,7 +58,7 @@ const Signup = () => {
               id="inputname"
               placeholder="Enter First Name"
               value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
           <div className="form-group col-md-6">
@@ -69,7 +69,7 @@ const Signup = () => {
               id="inputname"
               placeholder="Enter Last Name"
               value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
           <div className="form-group col-md-6">
@@ -80,7 +80,7 @@ const Signup = () => {
               id="inputEmail4"
               placeholder="Enter Email"
               value={email}
-            onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-group col-md-6">
@@ -91,7 +91,7 @@ const Signup = () => {
               id="inputPassword4"
               placeholder="Enter Password"
               value={password}
-            onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
         </div>

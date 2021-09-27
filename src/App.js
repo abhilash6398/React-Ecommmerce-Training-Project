@@ -4,6 +4,7 @@ import Signup from "./Components/Signup";
 import Nav from "./shared/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Reset from "./Components/Reset";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/reset" component={Reset} />
+        <Route path="/profile" component={Profile} />
       </Switch>
     </Router>
   );
