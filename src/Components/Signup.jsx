@@ -44,7 +44,7 @@ function Signup() {
 
   return (
     <div className="centered">
-      <div className="pgaddressrow" style={{ marginTop: "300px" }}>
+      <div className="pgaddressrow" style={{ marginTop: "350px" }}>
         <h1 className="heading">Login / Register</h1>
         <h4 className="smheading">
           <a href="/login">Home</a> / Login / <a href="/Signup ">Register</a>
