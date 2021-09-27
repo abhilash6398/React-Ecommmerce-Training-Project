@@ -47,7 +47,7 @@ const Reset = () => {
                           />
                         </div>
                       </div>
-                      <div className="form-group">
+                      <div className="form-group col-md-12 col-md-offset-12" style={{textAlign:"center"}}>
                         <input
                           name="recover-submit"
                           className="btn btn-lg btn-warning btn-block"
