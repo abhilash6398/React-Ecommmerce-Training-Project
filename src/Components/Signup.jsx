@@ -8,7 +8,7 @@ import {
 } from "./Regex";
 import "./style.css";
 
-const Signup = () => {
+function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -41,7 +41,14 @@ const Signup = () => {
   };
 
   return (
-    <div className="centered" style={{ marginTop: "60px" }}>
+    <div className="centered">
+      <div className="pgaddressrow" style={{ marginTop: "200px" }}>
+        <h1 className="heading">Login / Register</h1>
+        <h4 className="smheading">
+          <a href="/login">Home</a> / Login / <a href="/Signup ">Register</a>
+        </h4>
+      </div>
+      <br/>
       <div className="text-center mb-7">
         <h2 className="text-warning">Hello</h2>
         <h1 className="text-dark">SignUp</h1>
@@ -146,6 +153,6 @@ const Signup = () => {
       {shopNameError && <p>Your ShopName is invalid</p>}
     </div>
   );
-};
+}
 
 export default Signup;

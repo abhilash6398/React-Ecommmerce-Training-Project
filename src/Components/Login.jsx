@@ -17,8 +17,14 @@ const Login = () => {
   };
 
   return (
-    <div className="centered" style={{marginTop:"20px"}}>
-      <div className="text-center mb-7">
+    <div className="centered">
+      <div className="pgaddressrow" style={{ marginTop: "200px" }}>
+        <h1 className="heading">Login / Register</h1>
+        <h4 className="smheading">
+          <a href="/login">Home</a> / Login / <a href="/Signup ">Register</a>
+        </h4>
+      </div>
+      <div className="text-center mb-7" style={{ marginTop: "50px" }}>
         <h2 className="text-warning">Login to your account</h2>
       </div>
       {/* Form */}
@@ -61,15 +67,15 @@ const Login = () => {
         </div>
         <br />
 
+        <button type="submit" className="button button4" onClick={validate}>
+          Login
+        </button>
         <div className="col-auto my-1">
           <a href="reset" id="forgot-link">
             Forgot Password?
           </a>
         </div>
         <br />
-        <button type="submit" className="button button4" onClick={validate}>
-          Login
-        </button>
         {emailErr && <p>Your email is invalid</p>}
         {pwdError && <p>Your password is invalid</p>}
         <br />

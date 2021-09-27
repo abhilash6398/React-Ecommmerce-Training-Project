@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 /* Navbar Links */
